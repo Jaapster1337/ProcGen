@@ -13,11 +13,18 @@ public class RoomSpawn : MonoBehaviour {
 	void Update () {
 		
 	}
+		
+// wordt niet aangeroepen
+//	void OnCollisionEnter(Collision hit)
+//	{
+//		print(hit);
+//		if (hit.gameObject.tag == "Door") {
+//			print("Hello World");
+//		}
+//	}
 
-	void OnCollisionEnter(Collision hit)
-	{
-		print(hit);
-		if (gameObject.tag == "Player")
-			print("Hello World");
-	}
+//	heeft geen reciever
+//	void OnControllerColliderHit (ControllerColliderHit hit) { 
+//		hit.gameObject.SendMessage("RecieveMessage", hit.gameObject.GetInstanceID());
+//	}
 }

@@ -46,4 +46,10 @@ public class FirstPersonController : MonoBehaviour {
 
 
 	}
+// werkt niet
+	void Recievemessage (int id) {
+		if(id == gameObject.GetInstanceID()) {
+			print(id);
+		}
+	}
 }
